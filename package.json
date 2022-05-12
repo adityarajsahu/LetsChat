@@ -1,0 +1,26 @@
+{
+  "name": "letschat",
+  "version": "1.0.0",
+  "description": "Node Server for LetsChat application",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityarajsahu/LetsChat.git"
+  },
+  "author": "Adityaraj Sahu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityarajsahu/LetsChat/issues"
+  },
+  "homepage": "https://github.com/adityarajsahu/LetsChat#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
