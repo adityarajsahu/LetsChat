@@ -4,10 +4,11 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-const PORT = (3000 || process.env.PORT);
+let server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+let server_host = process.env.YOUR_HOST || '0.0.0.0';
 
-http.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`);
+http.listen(server_port, server_host, () => {
+    console.log(`Listening on port ${server_port}`);
 })
 
 app.use(express.static(__dirname + '/public'))
