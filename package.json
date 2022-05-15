@@ -4,7 +4,7 @@
   "description": "Node Server for LetsChat application",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
