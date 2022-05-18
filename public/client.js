@@ -21,7 +21,7 @@ do {
 
 let textArea = document.querySelector('#textarea');
 let messageArea = document.querySelector('.chat-box');
-let btn = document.getElementById('send-btn');
+let btn = document.querySelector('#send-btn');
 
 function showtext() {
     sendMessage(tinymce.activeEditor.getContent({format: 'html'}));
@@ -41,8 +41,7 @@ function sendMessage(message) {
 
 function appendMessage(msg, type) {
     let mainDiv = document.createElement('div');
-    let className = type;
-    mainDiv.classList.add(className, 'message');
+    mainDiv.classList.add(type, 'message');
 
     let markup = `
         <h4>${msg.user}</h4>

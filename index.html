@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LetsChat</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!--TinyMCE - WYSIWYG editor-->
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     </head>
 
     <body>
         <section class="message-section">
+            <!--header part of the chatting application-->
             <div class="header-data">
                 <img src="logo.png" alt="Logo" height="40" />
                 <h1>LetsChat</h1>
             </div>
 
+            <!--Chat box of the chatting app where the messages will be displayed.-->
             <div class="chat-box">
             </div>
             <div>
+                <!--Text area where user will enter the message.-->
                 <textarea id="textarea" cols="100" rows="1" class="form-control" placeholder="Enter Message..."></textarea>
+                <!--SEND button for sending message.-->
                 <button class="btn btn-outline-secondary" type="button" id="send-btn" onclick="showtext()" />SEND</button>
               </div>
         </section>
